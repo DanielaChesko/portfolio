@@ -1,0 +1,82 @@
+/* COLORES Y FUENTES*/
+:root {
+    --celadon: #b9f0d7;
+    --richBlack: #0c0c16;
+    --columbiaBlue: #c9e8ff;
+    --periwinkle: #b8baff;
+    --mediumSlateBlue: #6666ff;
+    --white: #fff;
+    --black: #000;
+
+    --fuenteImportada: "Red Hat Text", serif;
+    --fuente-styleNomal: normal;
+    --fuente-styleItalic: italic;
+    --fuente-weight400: 300;
+    --fuente-weight400: 400;
+    --fuente-weight500: 500;
+    --fuente-weight600: 600;
+    --fuente-weight700: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header{
+    background-color: var(--richBlack);
+}
+
+header nav ul{
+    padding: 1.3rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li{
+    list-style-type: none;
+    display: flex;
+    display: inline;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.color-barra{
+    color: var(--richBlack);
+}
+
+header nav ul li a{
+    padding: 0.3rem;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--fuenteImportada);
+    font-weight: var(--fuente-weight300);
+    font-style: var(--fuente-styleNomal);
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover{
+    font-family: var(--fuenteImportada);
+    font-weight: var(--fuente-weight500);
+    font-style: var(--fuente-styleNomal);
+}
+
+header nav ul li a:hover .color-barra{
+    color: var(--mediumSlateBlue);
+    font-family: var(--fuenteImportada);
+    font-weight: var(--fuente-weight600);
+    font-style: var(--fuente-styleNomal);
+
+}
+
+/* CUERPO */
+body{
+    background-color: var(--columbiaBlue);
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--mediumSlateBlue);
+}
